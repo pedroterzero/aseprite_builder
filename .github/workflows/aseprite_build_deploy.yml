@@ -73,10 +73,10 @@ jobs:
       - name: (Windows) Install dependencies
         if: matrix.os == 'windows-latest'
         uses: seanmiddleditch/gha-setup-ninja@v3
-      - name: (Windows) Enable SSL
+      - name: (Windows) Remove OpenSLL from PATH
         if: matrix.os == 'windows-latest'
         shell: powershell
-        run: choco install openssl
+        run: Remove-Item -Recurse -Force "C:\Program Files\OpenSSL\"
       - name: (Ubuntu) Install dependencies
         if: matrix.os == 'ubuntu-latest'
         run: sudo apt update && sudo apt install -y cmake ninja-build libxcursor-dev libxi-dev libgl1-mesa-dev
