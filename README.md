@@ -1,7 +1,3 @@
-> [!CAUTION]
-> Using the releases is not allowed by the Aseprite project, only me the repo owner are allowed to use the builds!
-> Builds are only accessable as to enable downloading from a scoop repository, not for public use!
-
 # What is it
 Automated workflow for GitHub Actions which builds Aseprite for Windows, Linux, macOS.</br>
 By using GitHub actions there is no need for manual compilation and it does not contain malware.</br>
